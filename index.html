@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>qloudexpert.de</title>
+<style>
+/* Taken from https://css-tricks.com/old-timey-terminal-styling/ */
+body {
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  font: 1.3rem monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+  pointer-events: none;
+}
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+pre {
+  margin: 0;
+}
+</style>
+</head>
 <body>
-<h1>Nothing to see here, move along!</h1>
+<pre>qloudexpert.de &#9925;
+<i>The Q stands for quality</i>
+
+&ndash; Architecture consulting &ndash; Remote contracting &ndash; Full stack development &ndash;
+&ndash; Java &ndash; Python &ndash; TypeScript &ndash; Spring &ndash; Vue &ndash; SQL &ndash; Elasticsearch &ndash; AWS &ndash; GCP &ndash;
+
+Harald-Ren&eacute; Westphal
+Helvesieker Weg 3
+27356 Rotenburg
+Germany
+
+&#x2709; info@qloudexpert.de
+
+VAT ID: DE325219262
+</pre>
 </body>
 </html>
